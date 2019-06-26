@@ -79,7 +79,8 @@
 - (UIBezierPath *)bezierPathWithFont:(UIFont *)font
 {
     CTFontRef ctFont = CTFontCreateWithName((__bridge CFStringRef)font.familyName, font.pointSize, NULL);
-    NSAttributedString *attributed = [[NSAttributedString alloc] initWithString:self attributes:[NSDictionary dictionaryWithObject:(__bridge id)ctFont forKey:(__bridge NSString*)kCTFontAttributeName]];
+    NSDictionary *atts = [NSDictionary dictionaryWithObject:(__bridge id)ctFont forKey:(__bridge NSString*)kCTFontAttributeName];
+    NSAttributedString *attributed = [[NSAttributedString alloc] initWithString:self attributes:atts];
     CFRelease(ctFont);
     
     CGMutablePathRef letters = CGPathCreateMutable();
