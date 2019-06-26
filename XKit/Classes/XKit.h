@@ -15,6 +15,7 @@
 #import "NSDate+XUtils.h"
 
 #import "NSError+XUtils.h"
+#import "NSBundle+XUtils.h"
 
 #import "UIDevice+XUtils.h"
 #import "UIView+XUtils.h"

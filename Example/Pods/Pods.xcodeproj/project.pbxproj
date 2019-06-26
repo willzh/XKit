@@ -29,6 +29,8 @@
 		8531A084EB9D7F52F28673D0E54AD5F6 /* NSError+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6090D9CA8069E36E065936AB3A60D5FF /* NSError+XUtils.m */; };
 		8ED012E0A98C184DB60FA044B430C883 /* NSDate+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7579859D1A60E0911319EDBE0FB9A /* NSDate+XUtils.m */; };
 		BC8DB495018836F2F65BAAEEB1DBA6A6 /* XKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4C922FAC9C0BF69BFE250C7C5DC329 /* XKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE819B3422C377A30021DCED /* NSBundle+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE819B3222C377A30021DCED /* NSBundle+XUtils.m */; };
+		BE819B3522C377A30021DCED /* NSBundle+XUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BE819B3322C377A30021DCED /* NSBundle+XUtils.h */; };
 		C00682C03722571D2BBB2D25304F0E74 /* NSMutableArray+XUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE28F0C830C89C20509757FFF454491 /* NSMutableArray+XUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFD49B45965D9989715800C5C5078113 /* Pods-XKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3051AD98CAC8F433F074462861C5D3E /* Pods-XKit_Example-dummy.m */; };
 		F177491EC1367EB81717E21BBF569247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -60,7 +62,7 @@
 		10D24575E474707323FAE8CE0099E44C /* Pods-XKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		10DA1606F8724A605EC421C8D4BD4B68 /* NSMutableArray+XUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+XUtils.m"; path = "XKit/Classes/NSMutableArray+XUtils.m"; sourceTree = "<group>"; };
 		11922F74E749217B1BA03F1DFA1E50D5 /* Pods-XKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		132E3444F70F57CC443597C3EFC35E85 /* XKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		132E3444F70F57CC443597C3EFC35E85 /* XKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		156A57B03476793FFD24A2BDDC135808 /* XKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XKit-Info.plist"; sourceTree = "<group>"; };
 		2A1B63E597C37E4E2A6FEE48DDDB08AB /* UIDevice+XUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+XUtils.h"; path = "XKit/Classes/UIDevice+XUtils.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -74,11 +76,11 @@
 		80A61157BD09D5A7EB1C03321513320E /* XKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XKit-prefix.pch"; sourceTree = "<group>"; };
 		953BABC124255C0F8BBB1A09CCEF22D7 /* Pods-XKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9A4C922FAC9C0BF69BFE250C7C5DC329 /* XKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XKit.h; path = XKit/Classes/XKit.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A40E7786922CBFE0C3FEBD9188C36AD0 /* Pods-XKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XKit_Example-Info.plist"; sourceTree = "<group>"; };
 		A5FF0BAEC8FDB7670424B8F7D2EF7EC5 /* XKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XKit-dummy.m"; sourceTree = "<group>"; };
 		A64E9BA83F7A244C2712AFDCEB08116C /* NSString+XUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XUtils.h"; path = "XKit/Classes/NSString+XUtils.h"; sourceTree = "<group>"; };
-		A7E76C9A5E4CAF58842258D9682C606D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A7E76C9A5E4CAF58842258D9682C606D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A879B4D5382047B83B6718EA87555450 /* Pods-XKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AB485CC3224577BA0F8CB22D6210841F /* Pods-XKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XKit_Tests.modulemap"; sourceTree = "<group>"; };
 		AD6B5888A1521DA6536B041F153D266E /* Pods-XKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,17 +90,19 @@
 		B7E4C7272BA2BEE2394E20F7922A4F8F /* Pods-XKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B9FCCED749B4BE110B170F711968E198 /* Pods-XKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BAF1E8E4AD8A1ECE650FF95F2F72408C /* UIDevice+XUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+XUtils.m"; path = "XKit/Classes/UIDevice+XUtils.m"; sourceTree = "<group>"; };
+		BE819B3222C377A30021DCED /* NSBundle+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+XUtils.m"; path = "XKit/Classes/NSBundle+XUtils.m"; sourceTree = "<group>"; };
+		BE819B3322C377A30021DCED /* NSBundle+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+XUtils.h"; path = "XKit/Classes/NSBundle+XUtils.h"; sourceTree = "<group>"; };
 		C63094F095CDC030A6C711D3A482F7B2 /* NSError+XUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+XUtils.h"; path = "XKit/Classes/NSError+XUtils.h"; sourceTree = "<group>"; };
 		C6D18BBC32B2E03B002C1170A50BBD9F /* Pods-XKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XKit_Example.modulemap"; sourceTree = "<group>"; };
 		C9CCF00E1E65367233FA7F3A5A21F845 /* Pods-XKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF4B5C4497D96DECD94E873D0752BCF3 /* XKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XKit.framework; path = XKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFA81EEC183335EAC69D32DD0409618C /* Pods_XKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XKit_Tests.framework; path = "Pods-XKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4B5C4497D96DECD94E873D0752BCF3 /* XKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA81EEC183335EAC69D32DD0409618C /* Pods_XKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31F49E840335B6670232CD0AE8B132B /* UIView+XUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XUtils.h"; path = "XKit/Classes/UIView+XUtils.h"; sourceTree = "<group>"; };
 		E1420344F50F7F67EE859271AC03E784 /* UIViewController+XUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XUtils.m"; path = "XKit/Classes/UIViewController+XUtils.m"; sourceTree = "<group>"; };
 		E26CC4D0F7421EA8FDB4C5C48AC39849 /* Pods-XKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		E6BCFAC22D9F816892A26E4EC2CC1836 /* Pods_XKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XKit_Example.framework; path = "Pods-XKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BCFAC22D9F816892A26E4EC2CC1836 /* Pods_XKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B4B6B7028633545B41D2D39AFF4321 /* Pods-XKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		EDCF1E43B37447FE7D7549146BB83680 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EDCF1E43B37447FE7D7549146BB83680 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F1ED260BC79D8DFA808EC07AE9BCA115 /* NSDictionary+XUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+XUtils.h"; path = "XKit/Classes/NSDictionary+XUtils.h"; sourceTree = "<group>"; };
 		FFCEA66C93152649947F4478B2BC32CE /* UIView+XUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XUtils.m"; path = "XKit/Classes/UIView+XUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +245,8 @@
 				FFCEA66C93152649947F4478B2BC32CE /* UIView+XUtils.m */,
 				36D3E6277FAFC154FA8FA5D3706A88C3 /* UIViewController+XUtils.h */,
 				E1420344F50F7F67EE859271AC03E784 /* UIViewController+XUtils.m */,
+				BE819B3322C377A30021DCED /* NSBundle+XUtils.h */,
+				BE819B3222C377A30021DCED /* NSBundle+XUtils.m */,
 				9A4C922FAC9C0BF69BFE250C7C5DC329 /* XKit.h */,
 				DE7C78CC522D5FE287B2BCAB6416F4DE /* Pod */,
 				C2DC249AFB8A0CCB09437B0C160F9AB4 /* Support Files */,
@@ -276,6 +282,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819B3522C377A30021DCED /* NSBundle+XUtils.h in Headers */,
 				71385AE723CDB1B1AEA901F0567BEB68 /* Pods-XKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD49B45965D9989715800C5C5078113 /* Pods-XKit_Example-dummy.m in Sources */,
+				BE819B3422C377A30021DCED /* NSBundle+XUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,8 +625,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
