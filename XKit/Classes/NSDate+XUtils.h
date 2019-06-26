@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 当前毫秒数
-- (NSTimeInterval)currentMilliSeconds;
++ (NSTimeInterval)currentMilliSeconds;
 
 
 

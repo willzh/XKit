@@ -11,7 +11,7 @@
 
 
 /// 当前毫秒数
-- (NSTimeInterval)currentMilliSeconds {
++ (NSTimeInterval)currentMilliSeconds {
     return [[NSDate date] timeIntervalSince1970] * 1000;
 }
 

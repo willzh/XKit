@@ -20,9 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'XKit'
 ```
 
-## Author
-
-willzh, zworrks@163.com
 
 ## License
 
