@@ -1,0 +1,22 @@
+{
+  "name": "XKit",
+  "version": "0.1.0",
+  "summary": "A short description of XKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/willzh/XKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "willzh": "zworrks@163.com"
+  },
+  "source": {
+    "git": "https://github.com/willzh/XKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XKit/Classes/**/*"
+}
