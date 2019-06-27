@@ -11,8 +11,8 @@
 @implementation UIColor (XUtils)
 
 
-CG_EXTERN UIColor *ColorWithRGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a) {
-    return [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
+CG_EXTERN UIColor *ColorWithRGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat alpha) {
+    return [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:alpha];
 }
 
 CG_EXTERN UIColor *ColorWithRGB(CGFloat r, CGFloat g, CGFloat b) {
@@ -20,9 +20,9 @@ CG_EXTERN UIColor *ColorWithRGB(CGFloat r, CGFloat g, CGFloat b) {
 }
 
 
-CG_EXTERN UIColor *ColorWithSameRGB(CGFloat v, CGFloat a) {
+CG_EXTERN UIColor *ColorWithSameRGB(CGFloat v, CGFloat alpha) {
     CGFloat cv = v / 255.0;
-    return ColorWithRGBA(cv, cv, cv, a);
+    return ColorWithRGBA(cv, cv, cv, alpha);
 }
 
 
@@ -40,7 +40,7 @@ CG_EXTERN UIColor *ColorWithHexRGB(NSInteger hexRGB, CGFloat a) {
     return [UIColor colorWithRed:(((hexRGB & 0xFF0000) >> 16) / 255.0)
                            green:(((hexRGB & 0xFF00) >> 8) / 255.0)
                             blue:((hexRGB & 0xFF) / 255.0)
-                           alpha:1.0];
+                           alpha:a];
 }
 
 
