@@ -22,7 +22,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BE70753C22C4E11500B4998B /* UIColor+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE70753A22C4E11400B4998B /* UIColor+XUtils.m */; };
 		E0D7F8E82A5A78571FC4DC05 /* Pods_XKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F58B1ADC95A3B951671ABC /* Pods_XKit_Example.framework */; };
 		F67FD51996D15AC0B1582DBC /* Pods_XKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694412DB6D03B434D0D0E4D1 /* Pods_XKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -67,8 +66,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0685A94BB1C45601C6F3A60 /* Pods-XKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-XKit_Example/Pods-XKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B94A958D3409972B28297105 /* XKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XKit.podspec; path = ../XKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE70753A22C4E11400B4998B /* UIColor+XUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+XUtils.m"; path = "../../UIColor+XUtils.m"; sourceTree = "<group>"; };
-		BE70753B22C4E11500B4998B /* UIColor+XUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+XUtils.h"; path = "../../UIColor+XUtils.h"; sourceTree = "<group>"; };
 		E4D08F8AC05A980BB100E7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +132,6 @@
 		6003F593195388D20070C39A /* Example for XKit */ = {
 			isa = PBXGroup;
 			children = (
-				BE70753B22C4E11500B4998B /* UIColor+XUtils.h */,
-				BE70753A22C4E11400B4998B /* UIColor+XUtils.m */,
 				6003F59C195388D20070C39A /* SZAppDelegate.h */,
 				6003F59D195388D20070C39A /* SZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -372,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE70753C22C4E11500B4998B /* UIColor+XUtils.m in Sources */,
 				6003F59E195388D20070C39A /* SZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

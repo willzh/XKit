@@ -7,7 +7,7 @@
 //
 
 #import "SZViewController.h"
-#import "UIColor+XUtils.h"
+#import <XKit/XKit.h>
 
 
 @interface SZViewController ()
@@ -20,8 +20,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
+    
+    CGFloat x = 10.0;
+    CGFloat y = 70.0;
+    for (NSInteger i=0; i<30; i++)
+    {
+        UIView *tv = [[UIView alloc] initWithFrame:CGRectMake(x, y, 30, 30)];
+        tv.backgroundColor = ColorWithHexRGB(0xff00ff, 0.03 * i);
+        [self.view addSubview:tv];
+        
+        x += 40.0;
+        if (x > CGRectGetWidth([UIScreen mainScreen].bounds))
+        {
+            x = 10.0;
+            y += 40.0;
+        }
+    }
     
 }
 
