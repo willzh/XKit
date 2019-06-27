@@ -16,6 +16,7 @@
 #import "NSError+XUtils.h"
 #import "NSMutableArray+XUtils.h"
 #import "NSString+XUtils.h"
+#import "UIColor+XUtils.h"
 #import "UIDevice+XUtils.h"
 #import "UIView+XUtils.h"
 #import "UIViewController+XUtils.h"

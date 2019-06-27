@@ -7,6 +7,8 @@
 //
 
 #import "SZViewController.h"
+#import "UIColor+XUtils.h"
+
 
 @interface SZViewController ()
 
@@ -14,10 +16,13 @@
 
 @implementation SZViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

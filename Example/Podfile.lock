@@ -1,5 +1,5 @@
 PODS:
-  - XKit (1.0.3)
+  - XKit (1.0.5)
 
 DEPENDENCIES:
   - XKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XKit: 490a40aafe49e96ccd5e24860656d0ada38505cf
+  XKit: 77cd8fa475fcab5b6344618d122116815864373e
 
 PODFILE CHECKSUM: caf4b6313262818eef35335b1e97d51976335bc2
 
