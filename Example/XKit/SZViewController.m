@@ -27,7 +27,7 @@
     for (NSInteger i=0; i<30; i++)
     {
         UIView *tv = [[UIView alloc] initWithFrame:CGRectMake(x, y, 30, 30)];
-        tv.backgroundColor = ColorWithHexRGB(0xff00ff, 0.03 * i);
+        tv.backgroundColor = ZS_ColorWithHexRGB(0xff00ff, 0.03 * i);
         [self.view addSubview:tv];
         
         x += 40.0;
@@ -37,6 +37,20 @@
             y += 40.0;
         }
     }
+    
+    
+    UIView *tv1 = [[UIView alloc] initWithFrame:CGRectMake(100, 200, 30, 30)];
+    tv1.backgroundColor = ZS_ColorWithRGB(255, 0, 255);
+    [self.view addSubview:tv1];
+    
+    UIView *tv2 = [[UIView alloc] initWithFrame:CGRectMake(140, 200, 30, 30)];
+    tv2.backgroundColor = ZS_ColorWithHex(0xff00ff);
+    [self.view addSubview:tv2];
+    
+    UIView *tv3 = [[UIView alloc] initWithFrame:CGRectMake(180, 200, 30, 30)];
+    tv3.backgroundColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:1];
+    [self.view addSubview:tv3];
+    
     
 }
 

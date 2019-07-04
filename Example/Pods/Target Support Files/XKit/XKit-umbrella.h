@@ -18,6 +18,8 @@
 #import "NSString+XUtils.h"
 #import "UIColor+XUtils.h"
 #import "UIDevice+XUtils.h"
+#import "UIImageView+XUtils.h"
+#import "UITextField+XUtils.h"
 #import "UIView+XUtils.h"
 #import "UIViewController+XUtils.h"
 #import "XKit.h"
