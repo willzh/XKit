@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSError (XUtils)
 
 /// 构造 error 
-+ (instancetype)errorWithDomain:(NSErrorDomain)domain
++ (instancetype)zs_errorWithDomain:(NSErrorDomain)domain
                            code:(NSInteger)code
            localizedDescription:(NSString *)localDesc;
 

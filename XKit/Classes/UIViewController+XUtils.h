@@ -8,19 +8,19 @@
 #import <UIKit/UIKit.h>
 
 
-@interface UIViewController (Alert)
+@interface UIViewController (XAlert)
 
 /// 显示一个 ‘确认’ 按钮的 alert，没有事件
-- (void)showOneButtonAlert:(NSString *)title msg:(NSString *)msg;
+- (void)zs_showOneButtonAlert:(NSString *)title msg:(NSString *)msg;
 
 /// 显示一个 alert，根据返回的 title 来判断事件
-- (void)showAlert:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block;
+- (void)zs_showAlert:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block;
 
 @end
 
 
 
-@interface UIViewController (ActionSheet)
+@interface UIViewController (XActionSheet)
 
  /**
   *@desc 显示 ActionSheet
@@ -29,6 +29,24 @@
   *@param titles 按钮标题
   *@param block 回调，根据返回的 title 来判断事件
   */
-- (void)showActionSheet:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block;
+- (void)zs_showActionSheet:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block;
+
+@end
+
+
+
+
+@interface UIViewController (XLoader)
+
+/// 从 storyboar 中加载。
++ (instancetype)zs_loadFromStoryboard:(NSString *)storyboardName;
+
+/// 从 storyboar 中加载, 指定 viewController 的 identifier。
++ (instancetype)zs_loadFromStoryboard:(NSString *)storyboardName identifier:(NSString *)vcid;
+
+/// 从 xib 加载。
++ (instancetype)zs_loadFromXib;
+
+
 
 @end

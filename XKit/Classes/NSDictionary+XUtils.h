@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 拼接字典。例如: k1=v1&k2=v2&k3=v3
-- (NSString *)keyValuesJoinedByString:(NSString *)joined;
+- (NSString *)zs_keyValuesJoinedByString:(NSString *)joined;
 
 
 @end

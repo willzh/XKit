@@ -11,17 +11,17 @@
 
 
 
-@implementation UIViewController (Alert)
+@implementation UIViewController (XAlert)
 
 #pragma mark -
-- (void)showOneButtonAlert:(NSString *)title msg:(NSString *)msg
+- (void)zs_showOneButtonAlert:(NSString *)title msg:(NSString *)msg
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)showAlert:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block
+- (void)zs_showAlert:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
     
@@ -45,9 +45,9 @@
 
 
 
-@implementation UIViewController (ActionSheet)
+@implementation UIViewController (XActionSheet)
 
-- (void)showActionSheet:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block
+- (void)zs_showActionSheet:(NSString *)title msg:(NSString *)msg buttons:(NSArray <NSString *> *)titles actions:(void(^)(NSString *title))block
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleActionSheet];
     
@@ -75,10 +75,29 @@
 
 
 
+@implementation UIViewController (XLoader)
+
+
+/// 从 storyboar 中加载。
++ (instancetype)zs_loadFromStoryboard:(NSString *)storyboardName {
+    return [self zs_loadFromStoryboard:storyboardName identifier:NSStringFromClass([self class])];
+}
+
+/// 从 storyboar 中加载, 指定 viewController 的 identifier。
++ (instancetype)zs_loadFromStoryboard:(NSString *)storyboardName identifier:(NSString *)vcid
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    return [sb instantiateViewControllerWithIdentifier:vcid];
+}
+
+
+/// 从 xib 加载。
++ (instancetype)zs_loadFromXib {
+    return [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
+}
 
 
 
 
-
-
+@end
 

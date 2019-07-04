@@ -9,7 +9,7 @@
 
 @implementation NSDictionary (XUtils)
 
-- (NSString *)keyValuesJoinedByString:(NSString *)joined
+- (NSString *)zs_keyValuesJoinedByString:(NSString *)joined
 {
     NSArray *keys = self.allKeys;
     [keys sortedArrayUsingComparator:^NSComparisonResult(NSString *  _Nonnull obj1, NSString *  _Nonnull obj2) {

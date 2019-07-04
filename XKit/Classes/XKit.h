@@ -20,6 +20,8 @@
 #import "UIColor+XUtils.h"
 #import "UIDevice+XUtils.h"
 #import "UIView+XUtils.h"
+#import "UITextField+XUtils.h"
+#import "UIImageView+XUtils.h"
 #import "UIViewController+XUtils.h"
 
 #endif /* XKit_h */

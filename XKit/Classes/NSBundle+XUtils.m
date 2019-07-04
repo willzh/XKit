@@ -12,63 +12,63 @@
 
 
 /// 显示的名称
-+ (NSString *)appDisplayName {
++ (NSString *)zs_appDisplayName {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 }
 
 /// App 版本号
-+ (NSString *)appVersion {
++ (NSString *)zs_appVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
 /// 编译版本号
-+ (NSString *)buildVersion {
++ (NSString *)zs_buildVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
 }
 
 /// CFBundleInfoDictionaryVersion
-+ (NSString *)bundleInfoDictionaryVersion {
++ (NSString *)zs_bundleInfoDictionaryVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleInfoDictionaryVersionKey];
 }
 
 /// CFBundleExecutable
-+ (NSString *)bundleExecutable {
++ (NSString *)zs_bundleExecutable {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleExecutableKey];
 }
 
 /// CFBundleIdentifier
-+ (NSString *)bundleIdentifier {
++ (NSString *)zs_bundleIdentifier {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleIdentifierKey];
 }
 
 /// CFBundleDevelopmentRegion
-+ (NSString *)bundleDevelopmentRegion {
++ (NSString *)zs_bundleDevelopmentRegion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleDevelopmentRegionKey];
 }
 
 /// 获取包名称
-+ (NSString *)bundleName {
++ (NSString *)zs_bundleName {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey];
 }
 
 /// kCFBundleLocalizationsKey
-+ (NSString *)bundleLocalizations {
++ (NSString *)zs_bundleLocalizations {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleLocalizationsKey];
 }
 
 
-+ (void)logAll
++ (void)zs_logAll
 {
-    NSLog(@"appDisplayName:%@", [self appDisplayName]);
-    NSLog(@"appVersion:%@", [self appVersion]);
-    NSLog(@"buildVersion:%@", [self buildVersion]);
-    NSLog(@"appDisplayName:%@", [self appDisplayName]);
-    NSLog(@"bundleInfoDictionaryVersion:%@", [self bundleInfoDictionaryVersion]);
-    NSLog(@"bundleExecutable:%@", [self bundleExecutable]);
-    NSLog(@"bundleIdentifier:%@", [self bundleIdentifier]);
-    NSLog(@"bundleDevelopmentRegion:%@", [self bundleDevelopmentRegion]);
-    NSLog(@"bundleName:%@", [self bundleName]);
-    NSLog(@"bundleLocalizations:%@", [self bundleLocalizations]);
+    NSLog(@"appDisplayName:%@", [self zs_appDisplayName]);
+    NSLog(@"appVersion:%@", [self zs_appVersion]);
+    NSLog(@"buildVersion:%@", [self zs_buildVersion]);
+    NSLog(@"appDisplayName:%@", [self zs_appDisplayName]);
+    NSLog(@"bundleInfoDictionaryVersion:%@", [self zs_bundleInfoDictionaryVersion]);
+    NSLog(@"bundleExecutable:%@", [self zs_bundleExecutable]);
+    NSLog(@"bundleIdentifier:%@", [self zs_bundleIdentifier]);
+    NSLog(@"bundleDevelopmentRegion:%@", [self zs_bundleDevelopmentRegion]);
+    NSLog(@"bundleName:%@", [self zs_bundleName]);
+    NSLog(@"bundleLocalizations:%@", [self zs_bundleLocalizations]);
     
 }
 

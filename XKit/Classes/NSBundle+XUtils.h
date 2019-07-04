@@ -13,35 +13,35 @@
 
 
 /// 显示的名称
-+ (NSString *)appDisplayName;
++ (NSString *)zs_appDisplayName;
 
 /// App 版本号
-+ (NSString *)appVersion;
++ (NSString *)zs_appVersion;
 
 /// 编译版本号
-+ (NSString *)buildVersion;
++ (NSString *)zs_buildVersion;
 
 /// CFBundleInfoDictionaryVersion
-+ (NSString *)bundleInfoDictionaryVersion;
++ (NSString *)zs_bundleInfoDictionaryVersion;
 
 /// CFBundleExecutable
-+ (NSString *)bundleExecutable;
++ (NSString *)zs_bundleExecutable;
 
 /// CFBundleIdentifier
-+ (NSString *)bundleIdentifier;
++ (NSString *)zs_bundleIdentifier;
 
 /// CFBundleDevelopmentRegion
-+ (NSString *)bundleDevelopmentRegion;
++ (NSString *)zs_bundleDevelopmentRegion;
 
 /// 获取包名称
-+ (NSString *)bundleName;
++ (NSString *)zs_bundleName;
 
 /// kCFBundleLocalizationsKey
-+ (NSString *)bundleLocalizations;
++ (NSString *)zs_bundleLocalizations;
 
 
 /// 控制台打印上面所有方法的返回值
-+ (void)logAll;
++ (void)zs_logAll;
 
 
 

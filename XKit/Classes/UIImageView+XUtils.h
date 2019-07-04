@@ -9,7 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIImageView (XUtils)
+@interface UIImageView (XInit)
+
+
+/// 从图片名初始化一个 imageView
++ (instancetype)zs_imageViewWithImageName:(NSString *)imageName;
+
 
 @end
 

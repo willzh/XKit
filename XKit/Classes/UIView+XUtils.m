@@ -10,7 +10,7 @@
 @implementation UIView (XUtils)
 
 
-- (void)addWidthLayout:(CGFloat)width
+- (void)zs_addWidthLayout:(CGFloat)width
 {
     NSLayoutConstraint *layout = [NSLayoutConstraint constraintWithItem:self
                                                               attribute:NSLayoutAttributeWidth
@@ -23,7 +23,7 @@
     [self addConstraint:layout];
 }
 
-- (void)addHeightLayout:(CGFloat)height
+- (void)zs_addHeightLayout:(CGFloat)height
 {
     NSLayoutConstraint *layout = [NSLayoutConstraint constraintWithItem:self
                                                               attribute:NSLayoutAttributeHeight
@@ -38,6 +38,45 @@
 
 
 
+
+
+@end
+
+
+
+
+@implementation UIView (XLoader)
+
+
++ (instancetype)zs_loadInstanceFromNib
+{
+    return [self zs_loadInstanceFromNibWithName:NSStringFromClass([self class])];
+}
+
++ (instancetype)zs_loadInstanceFromNibWithName:(NSString *)nibName
+{
+    return [self zs_loadInstanceFromNibWithName:nibName owner:nil];
+}
+
++ (instancetype)zs_loadInstanceFromNibWithName:(NSString *)nibName owner:(id)owner
+{
+    return [self zs_loadInstanceFromNibWithName:nibName owner:owner bundle:[NSBundle mainBundle]];
+}
+
++ (instancetype)zs_loadInstanceFromNibWithName:(NSString *)nibName owner:(id)owner bundle:(NSBundle *)bundle
+{
+    UIView *result = nil;
+    NSArray* elements = [bundle loadNibNamed:nibName owner:owner options:nil];
+    for (id object in elements)
+    {
+        if ([object isKindOfClass:[self class]])
+        {
+            result = object;
+            break;
+        }
+    }
+    return result;
+}
 
 
 @end

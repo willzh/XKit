@@ -11,7 +11,7 @@
 @implementation NSError (XUtils)
 
 
-+ (instancetype)errorWithDomain:(NSErrorDomain)domain code:(NSInteger)code localizedDescription:(NSString *)localDesc
++ (instancetype)zs_errorWithDomain:(NSErrorDomain)domain code:(NSInteger)code localizedDescription:(NSString *)localDesc
 {
     return [self errorWithDomain:domain code:code userInfo:@{NSLocalizedDescriptionKey: localDesc}];
 }
