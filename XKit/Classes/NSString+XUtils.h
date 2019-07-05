@@ -32,13 +32,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否空字符串，只有空格和换行也会返回 YES
 - (BOOL)zs_isEmpty;
 
+/// 判断是否为数字
+- (BOOL)isNumber;
 
 
 /// 转换为 bezierPath
 - (UIBezierPath *)zs_bezierPathWithFont:(UIFont *)font;
 
 
+/// 随机指定长度的字符串
++ (NSString *)zs_randomStringWithLength:(NSInteger)length;
 
+/// excel 获取列名，满 Z 进 A。columnNumber = 1 返回 A，26 返回 Z，27 返回 AA，52 返回 AZ，53 返回 BA
++ (NSString *)zs_getColumnName:(NSInteger)columnNumber;
 
 
 @end

@@ -43,4 +43,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+
+
+@interface UIView (XAction)
+
+/// 给 view 添加一个单击事件
+- (UITapGestureRecognizer *)zs_addTapGesture:(void(^)(void))block;
+
+/// 添加点击事件。numberOfTaps = 点击次数。otherGesture = 需要避免冲突的其他手势。block = 点击成功回调
+- (UITapGestureRecognizer *)zs_addTapGestureWithTaps:(NSUInteger)numberOfTaps
+                      requireGestureRecognizerToFail:(nullable UIGestureRecognizer *)otherGesture
+                                           tapAction:(void(^)(void))block;
+
+
+@end
+
+
+
 NS_ASSUME_NONNULL_END

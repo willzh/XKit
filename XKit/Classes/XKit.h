@@ -22,6 +22,8 @@
 #import "UIView+XUtils.h"
 #import "UITextField+XUtils.h"
 #import "UIImageView+XUtils.h"
+#import "UITableViewCell+XUtils.h"
+#import "UICollectionViewCell+XUtils.h"
 #import "UIViewController+XUtils.h"
 
 #endif /* XKit_h */

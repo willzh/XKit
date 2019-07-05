@@ -15,7 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前毫秒数
 + (NSTimeInterval)zs_currentMilliSeconds;
 
+/// 一天的秒数
++ (NSInteger)zs_secondsOfDay;
 
+/// 一小时的秒数
++ (NSInteger)zs_secondsOfHour;
 
 @end
 

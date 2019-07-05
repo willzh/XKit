@@ -6,6 +6,7 @@
 //
 
 #import "UIView+XUtils.h"
+#import <objc/runtime.h>
 
 @implementation UIView (XUtils)
 
@@ -77,6 +78,68 @@
     }
     return result;
 }
+
+
+@end
+
+
+
+@implementation UIView (XAction)
+
+typedef void (^ZSTapBlock)(void);
+
+- (UITapGestureRecognizer *)zs_addTapGesture:(void(^)(void))block {
+    return [self zs_addTapGestureWithTaps:1 requireGestureRecognizerToFail:nil tapAction:block];
+}
+
+- (UITapGestureRecognizer *)zs_addTapGestureWithTaps:(NSUInteger)numberOfTaps
+                      requireGestureRecognizerToFail:(nullable UIGestureRecognizer *)otherGesture
+                                           tapAction:(void(^)(void))block
+
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zs_mutilTapAction:)];
+    tap.numberOfTapsRequired = numberOfTaps;
+    [self addGestureRecognizer:tap];
+    
+    if (otherGesture) {
+        [otherGesture requireGestureRecognizerToFail:tap];
+    }
+    
+    [self saveBlock:block withTap:tap];
+    
+    return tap;
+}
+
+
+- (void)zs_mutilTapAction:(UITapGestureRecognizer *)tap
+{
+    if (UIGestureRecognizerStateRecognized == tap.state)
+    {
+        ZSTapBlock block = [[self cacheBlocks] objectForKey:[NSString stringWithFormat:@"zs_tapblockkey_%ld", tap.numberOfTapsRequired]];
+        if (block) {
+            block();
+        }
+    }
+}
+
+
+- (void)saveBlock:(ZSTapBlock)block withTap:(UITapGestureRecognizer *)tap {
+    [[self cacheBlocks] setObject:block forKey:[NSString stringWithFormat:@"zs_tapblockkey_%ld", tap.numberOfTapsRequired]];
+}
+
+- (NSMutableDictionary *)cacheBlocks
+{
+    id blocks = objc_getAssociatedObject(self, "zsrt_cacheBlocks");
+    if (!blocks)
+    {
+        blocks = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, "zsrt_cacheBlocks", blocks, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return (NSMutableDictionary *)blocks;
+}
+
+
+
 
 
 @end

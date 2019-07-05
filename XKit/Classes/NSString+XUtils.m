@@ -49,6 +49,19 @@
     return NO;
 }
 
+- (BOOL)isNumber
+{
+    if ([self isEqualToString:@"-"] || [self isEqualToString:@"+"]) {
+        return NO;
+    }
+    NSCharacterSet *cs = [NSCharacterSet characterSetWithCharactersInString:@"-+0123456789."];
+    NSString *str = [self stringByTrimmingCharactersInSet:cs];
+    if(str.length > 0) {
+        return NO;
+    }
+    return YES;
+}
+
 
 
 #pragma mark - 格式化
@@ -117,6 +130,40 @@
     
     return path;
 }
+
+
+
+#pragma mark -
++ (NSString *)zs_randomStringWithLength:(NSInteger)length
+{
+    NSString *string = @"";
+    for (NSInteger i=0; i<length; i++) {
+        string = [string stringByAppendingFormat:@"%c", 'a' + arc4random() % 26];
+    }
+    return string;
+}
+
+
+/// excel 获取列名。columnNumber = 1 返回 A，26 返回 Z，27 返回 AA，52 返回 AZ，53 返回 BA
++ (NSString *)zs_getColumnName:(NSInteger)columnNumber
+{
+    NSInteger colNum = columnNumber;
+    if (colNum < 1) {
+        return nil;
+    }
+    
+    NSMutableString *colName = [NSMutableString string];
+    while (colNum > 0)
+    {
+        char cstr = (char)('A' + (colNum - 1) % 26);
+        [colName insertString:[NSString stringWithFormat:@"%c", cstr] atIndex:0];
+        
+        colNum = (colNum - 1) / 26;  // 减 1 因避免被 26 的倍数整除
+    }
+    
+    return colName;
+}
+
 
 
 

@@ -26,13 +26,26 @@
 /// 状态栏和导航栏总高度
 + (CGFloat)zs_heightOfStatusBarAndNavigationBar;
 
+/// toolbar 高度
++ (CGFloat)zs_heightOfToolBar;
+
+/// tabbar 高度
++ (CGFloat)zs_heightOfTabBar;
+
 /// 顶部安全区域高度
 + (CGFloat)zs_safeAreaOfTop;
 
 /// 底部安全区域高度
 + (CGFloat)zs_safeAreaOfBottom;
 
+/// 屏幕 size
++ (CGSize)zs_screenSize;
 
+/// 屏幕高度
++ (CGFloat)zs_screenHeight;
+
+/// 屏幕宽度
++ (CGFloat)zs_screenWidth;
 
 
 

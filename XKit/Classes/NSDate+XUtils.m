@@ -15,7 +15,15 @@
     return [[NSDate date] timeIntervalSince1970] * 1000;
 }
 
+/// 一天的秒数
++ (NSInteger)zs_secondsOfDay {
+    return 86400;
+}
 
+/// 一小时的秒数
++ (NSInteger)zs_secondsOfHour {
+    return 3600;
+}
 
 
 
