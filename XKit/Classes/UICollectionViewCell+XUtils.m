@@ -11,7 +11,7 @@
 
 
 /// 配置数据
-- (void)config:(id)model
+- (void)zs_config:(id)model
 {
     
 }

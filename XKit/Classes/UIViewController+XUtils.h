@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 
 
+#pragma mark - Alert
+
 @interface UIViewController (XAlert)
 
 /// 显示一个 ‘确认’ 按钮的 alert，没有事件
@@ -19,6 +21,7 @@
 @end
 
 
+#pragma mark - ActionSheet
 
 @interface UIViewController (XActionSheet)
 
@@ -35,6 +38,7 @@
 
 
 
+#pragma mark - Xib or Storyboard Loader
 
 @interface UIViewController (XLoader)
 
@@ -50,3 +54,4 @@
 
 
 @end
+

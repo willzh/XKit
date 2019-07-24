@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UICollectionViewCell (XUtils)
 
 /// 配置数据
-- (void)config:(id)model;
+- (void)zs_config:(id)model;
 
 
 @end

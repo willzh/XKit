@@ -22,6 +22,21 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BE83457E22E883A000361353 /* UIViewController+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456322E8839E00361353 /* UIViewController+XUtils.m */; };
+		BE83457F22E883A000361353 /* NSDate+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456522E8839E00361353 /* NSDate+XUtils.m */; };
+		BE83458022E883A000361353 /* NSMutableArray+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456622E8839E00361353 /* NSMutableArray+XUtils.m */; };
+		BE83458122E883A000361353 /* UITextField+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456922E8839E00361353 /* UITextField+XUtils.m */; };
+		BE83458222E883A000361353 /* UIImageView+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456A22E8839F00361353 /* UIImageView+XUtils.m */; };
+		BE83458322E883A000361353 /* UITableViewCell+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456B22E8839F00361353 /* UITableViewCell+XUtils.m */; };
+		BE83458422E883A000361353 /* NSError+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456C22E8839F00361353 /* NSError+XUtils.m */; };
+		BE83458522E883A000361353 /* UIColor+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456E22E8839F00361353 /* UIColor+XUtils.m */; };
+		BE83458622E883A000361353 /* NSString+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457022E8839F00361353 /* NSString+XUtils.m */; };
+		BE83458722E883A000361353 /* UICollectionViewCell+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457422E8839F00361353 /* UICollectionViewCell+XUtils.m */; };
+		BE83458822E883A000361353 /* UIDevice+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457822E8839F00361353 /* UIDevice+XUtils.m */; };
+		BE83458922E883A000361353 /* UIView+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457922E8839F00361353 /* UIView+XUtils.m */; };
+		BE83458A22E883A000361353 /* NSDictionary+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457B22E883A000361353 /* NSDictionary+XUtils.m */; };
+		BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457D22E883A000361353 /* NSBundle+XUtils.m */; };
+		BE83459122E8856800361353 /* NSObject+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83459022E8856800361353 /* NSObject+XUtils.m */; };
 		E0D7F8E82A5A78571FC4DC05 /* Pods_XKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F58B1ADC95A3B951671ABC /* Pods_XKit_Example.framework */; };
 		F67FD51996D15AC0B1582DBC /* Pods_XKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694412DB6D03B434D0D0E4D1 /* Pods_XKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +81,37 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0685A94BB1C45601C6F3A60 /* Pods-XKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-XKit_Example/Pods-XKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B94A958D3409972B28297105 /* XKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XKit.podspec; path = ../XKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE83456122E8839E00361353 /* NSDictionary+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XUtils.h"; sourceTree = "<group>"; };
+		BE83456222E8839E00361353 /* UIColor+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XUtils.h"; sourceTree = "<group>"; };
+		BE83456322E8839E00361353 /* UIViewController+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XUtils.m"; sourceTree = "<group>"; };
+		BE83456422E8839E00361353 /* UIViewController+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XUtils.h"; sourceTree = "<group>"; };
+		BE83456522E8839E00361353 /* NSDate+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XUtils.m"; sourceTree = "<group>"; };
+		BE83456622E8839E00361353 /* NSMutableArray+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+XUtils.m"; sourceTree = "<group>"; };
+		BE83456722E8839E00361353 /* UITableViewCell+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+XUtils.h"; sourceTree = "<group>"; };
+		BE83456822E8839E00361353 /* NSBundle+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+XUtils.h"; sourceTree = "<group>"; };
+		BE83456922E8839E00361353 /* UITextField+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XUtils.m"; sourceTree = "<group>"; };
+		BE83456A22E8839F00361353 /* UIImageView+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XUtils.m"; sourceTree = "<group>"; };
+		BE83456B22E8839F00361353 /* UITableViewCell+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+XUtils.m"; sourceTree = "<group>"; };
+		BE83456C22E8839F00361353 /* NSError+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+XUtils.m"; sourceTree = "<group>"; };
+		BE83456D22E8839F00361353 /* NSError+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+XUtils.h"; sourceTree = "<group>"; };
+		BE83456E22E8839F00361353 /* UIColor+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XUtils.m"; sourceTree = "<group>"; };
+		BE83456F22E8839F00361353 /* NSMutableArray+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+XUtils.h"; sourceTree = "<group>"; };
+		BE83457022E8839F00361353 /* NSString+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XUtils.m"; sourceTree = "<group>"; };
+		BE83457122E8839F00361353 /* NSString+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XUtils.h"; sourceTree = "<group>"; };
+		BE83457222E8839F00361353 /* UITextField+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+XUtils.h"; sourceTree = "<group>"; };
+		BE83457322E8839F00361353 /* XKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKit.h; sourceTree = "<group>"; };
+		BE83457422E8839F00361353 /* UICollectionViewCell+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XUtils.m"; sourceTree = "<group>"; };
+		BE83457522E8839F00361353 /* UIView+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XUtils.h"; sourceTree = "<group>"; };
+		BE83457622E8839F00361353 /* NSDate+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XUtils.h"; sourceTree = "<group>"; };
+		BE83457722E8839F00361353 /* UIImageView+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XUtils.h"; sourceTree = "<group>"; };
+		BE83457822E8839F00361353 /* UIDevice+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XUtils.m"; sourceTree = "<group>"; };
+		BE83457922E8839F00361353 /* UIView+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XUtils.m"; sourceTree = "<group>"; };
+		BE83457A22E883A000361353 /* UICollectionViewCell+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XUtils.h"; sourceTree = "<group>"; };
+		BE83457B22E883A000361353 /* NSDictionary+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XUtils.m"; sourceTree = "<group>"; };
+		BE83457C22E883A000361353 /* UIDevice+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XUtils.h"; sourceTree = "<group>"; };
+		BE83457D22E883A000361353 /* NSBundle+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XUtils.m"; sourceTree = "<group>"; };
+		BE83458F22E8856800361353 /* NSObject+XUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XUtils.h"; sourceTree = "<group>"; };
+		BE83459022E8856800361353 /* NSObject+XUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XUtils.m"; sourceTree = "<group>"; };
 		E4D08F8AC05A980BB100E7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +184,7 @@
 				6003F5A5195388D20070C39A /* SZViewController.h */,
 				6003F5A6195388D20070C39A /* SZViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				BE83453322E8838900361353 /* Classes */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -196,6 +243,45 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE83453322E8838900361353 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE83458F22E8856800361353 /* NSObject+XUtils.h */,
+				BE83459022E8856800361353 /* NSObject+XUtils.m */,
+				BE83456822E8839E00361353 /* NSBundle+XUtils.h */,
+				BE83457D22E883A000361353 /* NSBundle+XUtils.m */,
+				BE83457622E8839F00361353 /* NSDate+XUtils.h */,
+				BE83456522E8839E00361353 /* NSDate+XUtils.m */,
+				BE83456122E8839E00361353 /* NSDictionary+XUtils.h */,
+				BE83457B22E883A000361353 /* NSDictionary+XUtils.m */,
+				BE83456D22E8839F00361353 /* NSError+XUtils.h */,
+				BE83456C22E8839F00361353 /* NSError+XUtils.m */,
+				BE83456F22E8839F00361353 /* NSMutableArray+XUtils.h */,
+				BE83456622E8839E00361353 /* NSMutableArray+XUtils.m */,
+				BE83457122E8839F00361353 /* NSString+XUtils.h */,
+				BE83457022E8839F00361353 /* NSString+XUtils.m */,
+				BE83457A22E883A000361353 /* UICollectionViewCell+XUtils.h */,
+				BE83457422E8839F00361353 /* UICollectionViewCell+XUtils.m */,
+				BE83456222E8839E00361353 /* UIColor+XUtils.h */,
+				BE83456E22E8839F00361353 /* UIColor+XUtils.m */,
+				BE83457C22E883A000361353 /* UIDevice+XUtils.h */,
+				BE83457822E8839F00361353 /* UIDevice+XUtils.m */,
+				BE83457722E8839F00361353 /* UIImageView+XUtils.h */,
+				BE83456A22E8839F00361353 /* UIImageView+XUtils.m */,
+				BE83456722E8839E00361353 /* UITableViewCell+XUtils.h */,
+				BE83456B22E8839F00361353 /* UITableViewCell+XUtils.m */,
+				BE83457222E8839F00361353 /* UITextField+XUtils.h */,
+				BE83456922E8839E00361353 /* UITextField+XUtils.m */,
+				BE83457522E8839F00361353 /* UIView+XUtils.h */,
+				BE83457922E8839F00361353 /* UIView+XUtils.m */,
+				BE83456422E8839E00361353 /* UIViewController+XUtils.h */,
+				BE83456322E8839E00361353 /* UIViewController+XUtils.m */,
+				BE83457322E8839F00361353 /* XKit.h */,
+			);
+			name = Classes;
+			path = ../../XKit/Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,7 +293,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EB7D4D9EF1AD31519A7DB0DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,24 +427,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB7D4D9EF1AD31519A7DB0DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XKit_Example/Pods-XKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XKit/XKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XKit_Example/Pods-XKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -368,8 +435,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SZAppDelegate.m in Sources */,
+				BE83457F22E883A000361353 /* NSDate+XUtils.m in Sources */,
+				BE83458422E883A000361353 /* NSError+XUtils.m in Sources */,
+				BE83458722E883A000361353 /* UICollectionViewCell+XUtils.m in Sources */,
+				BE83458122E883A000361353 /* UITextField+XUtils.m in Sources */,
+				BE83458922E883A000361353 /* UIView+XUtils.m in Sources */,
+				BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */,
+				BE83458622E883A000361353 /* NSString+XUtils.m in Sources */,
+				BE83458022E883A000361353 /* NSMutableArray+XUtils.m in Sources */,
+				BE83457E22E883A000361353 /* UIViewController+XUtils.m in Sources */,
+				BE83458822E883A000361353 /* UIDevice+XUtils.m in Sources */,
+				BE83458322E883A000361353 /* UITableViewCell+XUtils.m in Sources */,
+				BE83459122E8856800361353 /* NSObject+XUtils.m in Sources */,
+				BE83458A22E883A000361353 /* NSDictionary+XUtils.m in Sources */,
 				6003F5A7195388D20070C39A /* SZViewController.m in Sources */,
+				BE83458522E883A000361353 /* UIColor+XUtils.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BE83458222E883A000361353 /* UIImageView+XUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

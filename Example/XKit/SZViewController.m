@@ -7,7 +7,8 @@
 //
 
 #import "SZViewController.h"
-#import <XKit/XKit.h>
+//#import <XKit/XKit.h>
+#import "XKit.h"
 
 
 
