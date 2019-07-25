@@ -37,6 +37,7 @@
 		BE83458A22E883A000361353 /* NSDictionary+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457B22E883A000361353 /* NSDictionary+XUtils.m */; };
 		BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457D22E883A000361353 /* NSBundle+XUtils.m */; };
 		BE83459122E8856800361353 /* NSObject+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83459022E8856800361353 /* NSObject+XUtils.m */; };
+		BE9FA97522E95748004723CC /* SZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9FA97422E95748004723CC /* SZPerson.m */; };
 		E0D7F8E82A5A78571FC4DC05 /* Pods_XKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F58B1ADC95A3B951671ABC /* Pods_XKit_Example.framework */; };
 		F67FD51996D15AC0B1582DBC /* Pods_XKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694412DB6D03B434D0D0E4D1 /* Pods_XKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,8 @@
 		BE83457D22E883A000361353 /* NSBundle+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XUtils.m"; sourceTree = "<group>"; };
 		BE83458F22E8856800361353 /* NSObject+XUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XUtils.h"; sourceTree = "<group>"; };
 		BE83459022E8856800361353 /* NSObject+XUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XUtils.m"; sourceTree = "<group>"; };
+		BE9FA97322E95748004723CC /* SZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZPerson.h; sourceTree = "<group>"; };
+		BE9FA97422E95748004723CC /* SZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZPerson.m; sourceTree = "<group>"; };
 		E4D08F8AC05A980BB100E7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +186,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SZViewController.h */,
 				6003F5A6195388D20070C39A /* SZViewController.m */,
+				BE9FA97322E95748004723CC /* SZPerson.h */,
+				BE9FA97422E95748004723CC /* SZPerson.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				BE83453322E8838900361353 /* Classes */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -439,6 +444,7 @@
 				BE83458422E883A000361353 /* NSError+XUtils.m in Sources */,
 				BE83458722E883A000361353 /* UICollectionViewCell+XUtils.m in Sources */,
 				BE83458122E883A000361353 /* UITextField+XUtils.m in Sources */,
+				BE9FA97522E95748004723CC /* SZPerson.m in Sources */,
 				BE83458922E883A000361353 /* UIView+XUtils.m in Sources */,
 				BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */,
 				BE83458622E883A000361353 /* NSString+XUtils.m in Sources */,

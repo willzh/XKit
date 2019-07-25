@@ -9,32 +9,40 @@
 #import "SZViewController.h"
 //#import <XKit/XKit.h>
 #import "XKit.h"
+#import "SZPerson.h"
 
 
 
 @interface SZViewController ()
+
+@property (nonatomic, strong) NSString *hhaha;
+@property (nonatomic, strong) SZPerson *peroson;
 
 @end
 
 @implementation SZViewController
 
 
+#define KVOKeyPath(PATH)  @(((void)(NO && ((void)PATH, NO)), strchr(# PATH, '.') + 1))
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    NSLog(@"aaa:%@", [NSString zs_randomStringWithLength:12]);
     
-    NSLog(@"123:%d", [@"123" isNumber]);
-    NSLog(@"123:%d", [@"123.1" isNumber]);
-    NSLog(@"123:%d", [@"123.0" isNumber]);
-    NSLog(@"123:%d", [@"-123.0" isNumber]);
-    NSLog(@"123:%d", [@"-" isNumber]);
-    NSLog(@"123:%d", [@"+" isNumber]);
-    NSLog(@"123:%d", [@"+1" isNumber]);
-    NSLog(@"123:%d", [@"-1" isNumber]);
+//    NSLog(@"aaa:%@", [NSString zs_randomStringWithLength:12]);
     
+    self.peroson = [[SZPerson alloc] init];
+    
+//    NSLog(@"self.view:%@", [self.view zs_getPropertyName]);
+//    NSLog(@"hhaha:%@", [_peroson zs_getPropertyName:_peroson.name]);
+//    NSLog(@"hhaha:%@", [self zs_getPropertyName:self.hhaha]);
+    
+    NSLog(@"person:%@", KVOKeyPath(self.peroson.name));
+    NSLog(@"person:%@", KVOKeyPath(_peroson.name));
+    NSLog(@"person:%@", KVOKeyPath(_peroson.nameOne));
+    NSLog(@"person:%@", KVOKeyPath(_peroson.obj1));
     
 //
 //    
