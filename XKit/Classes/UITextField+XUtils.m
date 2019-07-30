@@ -82,9 +82,11 @@
 
 - (void)zs_setPlaceholderColor:(UIColor *)color font:(UIFont *)font
 {
-    [self setValue:color forKey:@"_placeholderLabel.textColor"];
-    [self setValue:font forKey:@"_placeholderLabel.font"];
+    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: color, NSFontAttributeName: font}];
 }
+
+
+
 
 @end
 

@@ -26,5 +26,6 @@
 #import "UITableViewCell+XUtils.h"
 #import "UICollectionViewCell+XUtils.h"
 #import "UIViewController+XUtils.h"
+#import "UINavigationController+XUtils.h"
 
 #endif /* XKit_h */
