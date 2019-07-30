@@ -37,6 +37,11 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:name object:nil userInfo:nil];
 }
 
+/// 移除所有通知监听
+- (void)zs_removeAllNotification {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 @end
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKit'
-  s.version          = '1.0.12'
+  s.version          = '1.0.13'
   s.summary          = '常用的方法.'
 
 # This description is used to generate tags and improve search results.

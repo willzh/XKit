@@ -19,6 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加一个高度约束
 - (void)zs_addHeightLayout:(CGFloat)height;
 
+/// 添加圆角
+- (void)zs_addCornerRadius:(CGFloat)radius;
+
+/// 添加边框
+- (void)zs_addBorder:(CGFloat)width color:(UIColor *)color;
+
+/// 添加边框和圆角
+- (void)zs_addBorder:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius;
+
 
 @end
 

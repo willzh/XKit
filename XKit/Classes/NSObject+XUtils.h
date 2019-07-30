@@ -30,7 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 发送通知
 - (void)zs_post:(NSNotificationName)name;
 
-
+/// 移除所有通知监听
+- (void)zs_removeAllNotification;
 
 
 

@@ -39,6 +39,31 @@
 
 
 
+/// 添加圆角
+- (void)zs_addCornerRadius:(CGFloat)radius
+{
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
+/// 添加边框
+- (void)zs_addBorder:(CGFloat)width color:(UIColor *)color
+{
+    self.layer.borderWidth = width;
+    self.layer.borderColor = color.CGColor;
+}
+
+/// 添加边框和圆角
+- (void)zs_addBorder:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius
+{
+    self.layer.borderWidth = width;
+    self.layer.borderColor = color.CGColor;
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
+
+
 
 
 @end
