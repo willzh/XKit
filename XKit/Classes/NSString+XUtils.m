@@ -37,10 +37,12 @@
 #pragma mark - 判断
 - (BOOL)zs_isEmpty
 {
-    if (self == nil || self == NULL || [self isKindOfClass:[NSNull class]]) {
+    if (self == NULL || [self isKindOfClass:[NSNull class]]) {
         return YES;
     }
-    
+    if (self.length == 0) {
+        return YES;
+    }
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     NSString *trimedString = [self stringByTrimmingCharactersInSet:set];
     if (trimedString.length == 0) {

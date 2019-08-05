@@ -64,6 +64,53 @@
 
 
 
+/// 设置最小 X 值
+- (void)zs_setMinX:(CGFloat)minX
+{
+    CGRect frame = self.frame;
+    frame.origin.x = minX;
+    self.frame = frame;
+}
+
+/// 设置最小 Y 值
+- (void)zs_setMinY:(CGFloat)minY
+{
+    CGRect frame = self.frame;
+    frame.origin.y = minY;
+    self.frame = frame;
+}
+
+/// 设置 origin
+- (void)zs_setOrigin:(CGPoint)origin
+{
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
+}
+
+/// 设置 size
+- (void)zs_setSize:(CGSize)size
+{
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+/// 设置最大 X 值
+- (void)zs_setMaxX:(CGFloat)maxX
+{
+    CGRect frame = self.frame;
+    frame.origin.x = maxX - frame.size.width;
+    self.frame = frame;
+}
+
+/// 设置最大 Y 值
+- (void)zs_setMaxY:(CGFloat)maxY
+{
+    CGRect frame = self.frame;
+    frame.origin.y = maxY - frame.size.height;
+    self.frame = frame;
+}
 
 
 @end

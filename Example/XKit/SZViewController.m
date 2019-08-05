@@ -44,6 +44,22 @@
     NSLog(@"person:%@", KVOKeyPath(_peroson.nameOne));
     NSLog(@"person:%@", KVOKeyPath(_peroson.obj1));
     
+    
+    UIView *tv1 = [[UIView alloc] initWithFrame:CGRectMake(40, 100, 30, 30)];
+    tv1.backgroundColor = ZS_ColorWithHexRGB(0xff00ff, 0.23);
+    [self.view addSubview:tv1];
+    
+    
+    UIView *tv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    tv.backgroundColor = ZS_ColorWithHexRGB(0xff00ff, 0.93);
+    [self.view addSubview:tv];
+    
+    
+    [tv zs_setMaxY:130];
+    [tv zs_setMaxX:110];
+    [tv zs_setSize:CGSizeMake(40, 40)];
+    
+
 //
 //    
 //    CGFloat x = 10.0;
@@ -76,17 +92,6 @@
 //    [self.view addSubview:tv3];
     
     
-    UITapGestureRecognizer *tap = [self.view zs_addTapGesture:^{
-        NSLog(@"单击事件");
-    }];
-    
-    UITapGestureRecognizer *tap2 = [self.view zs_addTapGestureWithTaps:2 requireGestureRecognizerToFail:tap tapAction:^{
-        NSLog(@"双击事件");
-    }];
-    
-    [self.view zs_addTapGestureWithTaps:3 requireGestureRecognizerToFail:tap2 tapAction:^{
-        NSLog(@"三击事件");
-    }];
     
 }
 
@@ -96,5 +101,34 @@
     // Dispose of any resources that can be recreated.
     
 }
+
+
+
+
+- (void)test
+{
+    NSString *s1 = @"1";
+    NSString *s2 = @"";
+    NSString *s3 = nil;
+    NSString *s4;
+    
+    NSLog(@"is empty:%d", [s3 zs_isEmpty]);
+    NSLog(@"is empty:%d", [s4 zs_isEmpty]);
+}
+
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self test];
+}
+
+
+
+
+
+
+
 
 @end

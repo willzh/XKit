@@ -28,6 +28,25 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加边框和圆角
 - (void)zs_addBorder:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius;
 
+/// 设置最小 X 值
+- (void)zs_setMinX:(CGFloat)minX;
+
+/// 设置最小 Y 值
+- (void)zs_setMinY:(CGFloat)minY;
+
+/// 设置 origin
+- (void)zs_setOrigin:(CGPoint)origin;
+
+/// 设置 size
+- (void)zs_setSize:(CGSize)size;
+
+/// 设置最大 X 值
+- (void)zs_setMaxX:(CGFloat)maxX;
+
+/// 设置最大 Y 值
+- (void)zs_setMaxY:(CGFloat)maxY;
+
+
 
 @end
 

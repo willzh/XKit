@@ -60,6 +60,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 移除 KVO
 - (void)zs_removeKVO:(NSString *)keyPath;
 
+/// 批量添加 kvo
+- (void)zs_addKVO:(NSArray <NSString *> *)keyPaths observer:(id)obs;
+
+/// 批量移除 kvo
+- (void)zs_removeKVOs:(NSArray <NSString *> *)keyPaths;
+
 
 @end
 

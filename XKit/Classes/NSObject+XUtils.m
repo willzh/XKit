@@ -117,6 +117,25 @@
 }
 
 
+/// 批量添加 kvo
+- (void)zs_addKVO:(NSArray <NSString *> *)keyPaths observer:(id)obs
+{
+    for (NSString *p in keyPaths) {
+        [self addObserver:obs forKeyPath:p options:NSKeyValueObservingOptionNew context:NULL];
+    }
+}
+
+/// 批量移除 kvo
+- (void)zs_removeKVOs:(NSArray <NSString *> *)keyPaths
+{
+    for (NSString *p in keyPaths) {
+        [self removeObserver:self forKeyPath:p];
+    }
+}
+
+
+
+
 
 
 @end
