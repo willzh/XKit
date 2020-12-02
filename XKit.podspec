@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKit'
-  s.version          = '1.0.20'
+  s.version          = '1.0.22'
   s.summary          = 'iOS OC 常用方法总结.'
 
 # This description is used to generate tags and improve search results.

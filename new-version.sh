@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 修改以下两项
-pod_version=1.0.21
+pod_version=1.0.22
 commit_msg="fix bugs"
 
 # 提交到 git
