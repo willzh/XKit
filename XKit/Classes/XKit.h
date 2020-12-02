@@ -8,6 +8,7 @@
 #ifndef XKit_h
 #define XKit_h
 
+#import "XGeometry.h"
 
 #import "NSDictionary+XUtils.h"
 #import "NSMutableArray+XUtils.h"
@@ -27,5 +28,9 @@
 #import "UICollectionViewCell+XUtils.h"
 #import "UIViewController+XUtils.h"
 #import "UINavigationController+XUtils.h"
+
+
+#import "CAKeyframeAnimation+XUtilis.h"
+
 
 #endif /* XKit_h */

@@ -8,6 +8,15 @@
 #import "UIView+XUtils.h"
 #import <objc/runtime.h>
 
+
+
+inline CGSize ZS_CGSizeScale(CGSize size, CGFloat scale) {
+    return CGSizeMake(size.width * scale, size.height * scale);
+}
+
+
+
+
 @implementation UIView (XUtils)
 
 

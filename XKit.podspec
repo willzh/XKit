@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKit'
-  s.version          = '1.0.15'
-  s.summary          = '常用的方法.'
+  s.version          = '1.0.20'
+  s.summary          = 'iOS OC 常用方法总结.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-记录一些常用的方法.
+  iOS 中 Objective-C 项目中常用的方法总结.
                        DESC
 
   s.homepage         = 'https://github.com/willzh/XKit'
@@ -28,9 +28,18 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/willzh/XKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'XKit/Classes/**/*'
+  
+  
+  #子目录 自定义UI
+  s.subspec 'CustomUI' do |cus|
+      cus.source_files = 'XKit/Classes/CustomUI/**/*'
+      #cus.dependency 'SZTools/Extensions'
+      #cus.dependency 'SZTools/Manager'
+  end
+  
   
   # s.resource_bundles = {
   #   'XKit' => ['XKit/Assets/*.png']

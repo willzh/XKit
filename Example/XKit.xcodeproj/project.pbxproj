@@ -22,6 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BE5CF987230E960400EAA869 /* CAKeyframeAnimation+XUtilis.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5CF986230E960400EAA869 /* CAKeyframeAnimation+XUtilis.m */; };
+		BE796B6D22F7C20C00398888 /* SZOnePixleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = BE796B6C22F7C20C00398888 /* SZOnePixleLine.m */; };
 		BE83457E22E883A000361353 /* UIViewController+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456322E8839E00361353 /* UIViewController+XUtils.m */; };
 		BE83457F22E883A000361353 /* NSDate+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456522E8839E00361353 /* NSDate+XUtils.m */; };
 		BE83458022E883A000361353 /* NSMutableArray+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83456622E8839E00361353 /* NSMutableArray+XUtils.m */; };
@@ -37,7 +39,9 @@
 		BE83458A22E883A000361353 /* NSDictionary+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457B22E883A000361353 /* NSDictionary+XUtils.m */; };
 		BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83457D22E883A000361353 /* NSBundle+XUtils.m */; };
 		BE83459122E8856800361353 /* NSObject+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83459022E8856800361353 /* NSObject+XUtils.m */; };
+		BE86FBAF23A488B100E56BC4 /* SZTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE86FBAE23A488B100E56BC4 /* SZTagView.m */; };
 		BE9FA97522E95748004723CC /* SZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9FA97422E95748004723CC /* SZPerson.m */; };
+		BEA742F723C35B480057A4B2 /* SZVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA742F623C35B480057A4B2 /* SZVideo.m */; };
 		BEF1044522F06E5D00D96556 /* UINavigationController+XUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF1044422F06E5D00D96556 /* UINavigationController+XUtils.m */; };
 		E0D7F8E82A5A78571FC4DC05 /* Pods_XKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F58B1ADC95A3B951671ABC /* Pods_XKit_Example.framework */; };
 		F67FD51996D15AC0B1582DBC /* Pods_XKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694412DB6D03B434D0D0E4D1 /* Pods_XKit_Tests.framework */; };
@@ -83,6 +87,11 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0685A94BB1C45601C6F3A60 /* Pods-XKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-XKit_Example/Pods-XKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B94A958D3409972B28297105 /* XKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XKit.podspec; path = ../XKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE5CF984230E8E2300EAA869 /* XGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGeometry.h; sourceTree = "<group>"; };
+		BE5CF985230E960400EAA869 /* CAKeyframeAnimation+XUtilis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAKeyframeAnimation+XUtilis.h"; sourceTree = "<group>"; };
+		BE5CF986230E960400EAA869 /* CAKeyframeAnimation+XUtilis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+XUtilis.m"; sourceTree = "<group>"; };
+		BE796B6B22F7C20C00398888 /* SZOnePixleLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZOnePixleLine.h; sourceTree = "<group>"; };
+		BE796B6C22F7C20C00398888 /* SZOnePixleLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZOnePixleLine.m; sourceTree = "<group>"; };
 		BE83456122E8839E00361353 /* NSDictionary+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XUtils.h"; sourceTree = "<group>"; };
 		BE83456222E8839E00361353 /* UIColor+XUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XUtils.h"; sourceTree = "<group>"; };
 		BE83456322E8839E00361353 /* UIViewController+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XUtils.m"; sourceTree = "<group>"; };
@@ -114,8 +123,12 @@
 		BE83457D22E883A000361353 /* NSBundle+XUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XUtils.m"; sourceTree = "<group>"; };
 		BE83458F22E8856800361353 /* NSObject+XUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XUtils.h"; sourceTree = "<group>"; };
 		BE83459022E8856800361353 /* NSObject+XUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XUtils.m"; sourceTree = "<group>"; };
+		BE86FBAD23A488B100E56BC4 /* SZTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTagView.h; sourceTree = "<group>"; };
+		BE86FBAE23A488B100E56BC4 /* SZTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZTagView.m; sourceTree = "<group>"; };
 		BE9FA97322E95748004723CC /* SZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZPerson.h; sourceTree = "<group>"; };
 		BE9FA97422E95748004723CC /* SZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZPerson.m; sourceTree = "<group>"; };
+		BEA742F523C35B480057A4B2 /* SZVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZVideo.h; sourceTree = "<group>"; };
+		BEA742F623C35B480057A4B2 /* SZVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZVideo.m; sourceTree = "<group>"; };
 		BEF1044322F06E5D00D96556 /* UINavigationController+XUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+XUtils.h"; sourceTree = "<group>"; };
 		BEF1044422F06E5D00D96556 /* UINavigationController+XUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+XUtils.m"; sourceTree = "<group>"; };
 		E4D08F8AC05A980BB100E7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -251,9 +264,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE796B6A22F7C1B700398888 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BE796B6B22F7C20C00398888 /* SZOnePixleLine.h */,
+				BE796B6C22F7C20C00398888 /* SZOnePixleLine.m */,
+				BE86FBAD23A488B100E56BC4 /* SZTagView.h */,
+				BE86FBAE23A488B100E56BC4 /* SZTagView.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		BE83453322E8838900361353 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BEA742F423C35B3C0057A4B2 /* AVFoundation */,
+				BE796B6A22F7C1B700398888 /* CustomUI */,
 				BE83458F22E8856800361353 /* NSObject+XUtils.h */,
 				BE83459022E8856800361353 /* NSObject+XUtils.m */,
 				BE83456822E8839E00361353 /* NSBundle+XUtils.h */,
@@ -286,10 +312,22 @@
 				BE83456322E8839E00361353 /* UIViewController+XUtils.m */,
 				BEF1044322F06E5D00D96556 /* UINavigationController+XUtils.h */,
 				BEF1044422F06E5D00D96556 /* UINavigationController+XUtils.m */,
+				BE5CF985230E960400EAA869 /* CAKeyframeAnimation+XUtilis.h */,
+				BE5CF986230E960400EAA869 /* CAKeyframeAnimation+XUtilis.m */,
+				BE5CF984230E8E2300EAA869 /* XGeometry.h */,
 				BE83457322E8839F00361353 /* XKit.h */,
 			);
 			name = Classes;
 			path = ../../XKit/Classes;
+			sourceTree = "<group>";
+		};
+		BEA742F423C35B3C0057A4B2 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				BEA742F523C35B480057A4B2 /* SZVideo.h */,
+				BEA742F623C35B480057A4B2 /* SZVideo.m */,
+			);
+			path = AVFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +381,7 @@
 				ORGANIZATIONNAME = willzh;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 7UWSX7L94J;
+						DevelopmentTeam = U88R9U8GCQ;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -444,16 +482,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA742F723C35B480057A4B2 /* SZVideo.m in Sources */,
 				6003F59E195388D20070C39A /* SZAppDelegate.m in Sources */,
 				BE83457F22E883A000361353 /* NSDate+XUtils.m in Sources */,
 				BE83458422E883A000361353 /* NSError+XUtils.m in Sources */,
 				BE83458722E883A000361353 /* UICollectionViewCell+XUtils.m in Sources */,
+				BE796B6D22F7C20C00398888 /* SZOnePixleLine.m in Sources */,
 				BE83458122E883A000361353 /* UITextField+XUtils.m in Sources */,
 				BE9FA97522E95748004723CC /* SZPerson.m in Sources */,
+				BE86FBAF23A488B100E56BC4 /* SZTagView.m in Sources */,
 				BE83458922E883A000361353 /* UIView+XUtils.m in Sources */,
 				BE83458B22E883A000361353 /* NSBundle+XUtils.m in Sources */,
 				BE83458622E883A000361353 /* NSString+XUtils.m in Sources */,
 				BE83458022E883A000361353 /* NSMutableArray+XUtils.m in Sources */,
+				BE5CF987230E960400EAA869 /* CAKeyframeAnimation+XUtilis.m in Sources */,
 				BE83457E22E883A000361353 /* UIViewController+XUtils.m in Sources */,
 				BE83458822E883A000361353 /* UIDevice+XUtils.m in Sources */,
 				BEF1044522F06E5D00D96556 /* UINavigationController+XUtils.m in Sources */,
@@ -591,11 +633,11 @@
 			baseConfigurationReference = A0685A94BB1C45601C6F3A60 /* Pods-XKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UWSX7L94J;
+				DEVELOPMENT_TEAM = U88R9U8GCQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XKit/XKit-Prefix.pch";
 				INFOPLIST_FILE = "XKit/XKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,11 +650,11 @@
 			baseConfigurationReference = 10F7CAE5494C32F1F1D16B12 /* Pods-XKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UWSX7L94J;
+				DEVELOPMENT_TEAM = U88R9U8GCQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XKit/XKit-Prefix.pch";
 				INFOPLIST_FILE = "XKit/XKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -72,6 +72,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+@interface NSObject (Keyboard)
+
+/// 添加键盘监听
+- (void)zs_listenKeyboardNotificationShowOrChange:(void(^)(NSTimeInterval t, CGRect endFrame, UIViewAnimationCurve curve))showBlock
+                                         willHide:(void(^)(NSTimeInterval t, UIViewAnimationCurve curve))hideBlock;
+
+@end
+
 
 
 NS_ASSUME_NONNULL_END

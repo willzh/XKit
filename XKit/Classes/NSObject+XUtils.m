@@ -135,6 +135,51 @@
 
 
 
+@end
+
+
+
+
+
+@implementation NSObject (Keyboard)
+
+/// 添加键盘监听
+- (void)zs_listenKeyboardNotificationShowOrChange:(void(^)(NSTimeInterval t, CGRect endFrame, UIViewAnimationCurve curve))showBlock
+                                         willHide:(void(^)(NSTimeInterval t, UIViewAnimationCurve curve))hideBlock
+{
+    NSNotificationCenter *notice = [NSNotificationCenter defaultCenter];
+    
+    [notice addObserverForName:UIKeyboardWillShowNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        if (showBlock)
+        {
+            NSTimeInterval t = [[note.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+            CGRect endFrame  = [[note.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+            NSUInteger curve = [[note.userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] unsignedIntegerValue];
+            showBlock(t, endFrame, curve);
+        }
+    }];
+    
+    [notice addObserverForName:UIKeyboardDidChangeFrameNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        if (showBlock)
+        {
+            NSTimeInterval t = [[note.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+            CGRect endFrame  = [[note.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+            NSUInteger curve = [[note.userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] unsignedIntegerValue];
+            showBlock(t, endFrame, curve);
+        }
+    }];
+    
+    [notice addObserverForName:UIKeyboardWillHideNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        if (hideBlock)
+        {
+            NSTimeInterval t = [[note.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+            NSUInteger curve = [[note.userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] unsignedIntegerValue];
+            hideBlock(t, curve);
+        }
+    }];
+    
+}
+
 
 
 

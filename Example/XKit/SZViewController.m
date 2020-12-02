@@ -10,6 +10,7 @@
 //#import <XKit/XKit.h>
 #import "XKit.h"
 #import "SZPerson.h"
+#import "SZTagView.h"
 
 
 
@@ -24,6 +25,23 @@
 
 
 #define KVOKeyPath(PATH)  @(((void)(NO && ((void)PATH, NO)), strchr(# PATH, '.') + 1))
+
+
+- (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    CGRect rect = {{0, 0}, size};
+    
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef ctf = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(ctf, color.CGColor);
+    CGContextFillRect(ctf, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 
 
 - (void)viewDidLoad
@@ -49,17 +67,34 @@
     tv1.backgroundColor = ZS_ColorWithHexRGB(0xff00ff, 0.23);
     [self.view addSubview:tv1];
     
+    [tv1.layer addAnimation:[CAKeyframeAnimation opacityAnimationWithValues:@[@0.0, @1.0, @0.0, @1.0, @0.0, @1.0, @0.0, @1.0, @0.0, @1.0,@0.0, @1.0, @0.0, @1.0, @0.0, @1.0, @0.0, @1.0] duration:10.5f beginTime:0.0] forKey:@"ani"];
+    
+    
     
     UIView *tv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     tv.backgroundColor = ZS_ColorWithHexRGB(0xff00ff, 0.93);
     [self.view addSubview:tv];
     
-    
     [tv zs_setMaxY:130];
     [tv zs_setMaxX:110];
     [tv zs_setSize:CGSizeMake(40, 40)];
     
-
+    
+    UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
+    tf.backgroundColor = [UIColor lightGrayColor];
+    tf.placeholder = @"hha";
+    [self.view addSubview:tf];
+    
+    
+    SZTagView *tag = [[SZTagView alloc] initWithFrame:CGRectMake(20, 180, 100, 32)];
+    tag.cornerRadius = 16.0;
+    tag.text = @"122/233";
+    tag.bgColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    tag.textColor = [UIColor whiteColor];
+    [self.view addSubview:tag];
+    
+    
+    
 //
 //    
 //    CGFloat x = 10.0;
@@ -92,6 +127,11 @@
 //    [self.view addSubview:tv3];
     
     
+    [self zs_listenKeyboardNotificationShowOrChange:^(NSTimeInterval t, CGRect endFrame, UIViewAnimationCurve curve) {
+        NSLog(@"111");
+    } willHide:^(NSTimeInterval t, UIViewAnimationCurve curve) {
+        NSLog(@"222");
+    }];
     
 }
 
@@ -107,13 +147,13 @@
 
 - (void)test
 {
-    NSString *s1 = @"1";
-    NSString *s2 = @"";
-    NSString *s3 = nil;
-    NSString *s4;
+    [self resignFirstResponder];
     
-    NSLog(@"is empty:%d", [s3 zs_isEmpty]);
-    NSLog(@"is empty:%d", [s4 zs_isEmpty]);
+//    NSString *s3 = nil;
+//    NSString *s4;
+//
+//    NSLog(@"is empty:%d", [s3 zs_isEmpty]);
+//    NSLog(@"is empty:%d", [s4 zs_isEmpty]);
 }
 
 

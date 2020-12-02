@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/// 以 16 进制创建 UIColor. 0xRRGGBB 格式， alpha 的值默认 1.0
+CG_EXTERN CGSize ZS_CGSizeScale(CGSize size, CGFloat scale);
+
+
+
 @interface UIView (XUtils)
 
 
