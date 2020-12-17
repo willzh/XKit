@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKit'
-  s.version          = '1.0.22'
+  s.version          = '1.0.23'
   s.summary          = 'iOS OC 常用方法总结.'
 
 # This description is used to generate tags and improve search results.
@@ -36,8 +36,8 @@ Pod::Spec.new do |s|
   #子目录 自定义UI
   s.subspec 'CustomUI' do |cus|
       cus.source_files = 'XKit/Classes/CustomUI/**/*'
-      #cus.dependency 'SZTools/Extensions'
-      #cus.dependency 'SZTools/Manager'
+      #cus.dependency 'XKit/Extensions'
+      #cus.dependency 'XKit/Manager'
   end
   
   
