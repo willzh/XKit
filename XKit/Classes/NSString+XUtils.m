@@ -187,8 +187,10 @@
 
 #pragma mark - 字体图标 Unicode
 /// e652.zs_unicode == \U0000e652
-- (NSString *)zs_unicode {
-    return [NSString stringWithFormat:@"\U0000%@", self];
+- (NSString *)zs_unicode
+{
+    unichar icon = strtoul([[NSString stringWithFormat:@"0x%@", self] UTF8String], 0, 16);
+    return [NSString stringWithCharacters:&icon length:1];
 }
 
 

@@ -57,10 +57,13 @@
 //    NSLog(@"hhaha:%@", [_peroson zs_getPropertyName:_peroson.name]);
 //    NSLog(@"hhaha:%@", [self zs_getPropertyName:self.hhaha]);
     
-    NSLog(@"person:%@", KVOKeyPath(self.peroson.name));
-    NSLog(@"person:%@", KVOKeyPath(_peroson.name));
-    NSLog(@"person:%@", KVOKeyPath(_peroson.nameOne));
-    NSLog(@"person:%@", KVOKeyPath(_peroson.obj1));
+//    NSLog(@"person:%@", KVOKeyPath(self.peroson.name));
+//    NSLog(@"person:%@", KVOKeyPath(_peroson.name));
+//    NSLog(@"person:%@", KVOKeyPath(_peroson.nameOne));
+//    NSLog(@"person:%@", KVOKeyPath(_peroson.obj1));
+    
+    
+    NSLog(@"unicode:%@", @"e652".zs_unicode);
     
     
     UIView *tv1 = [[UIView alloc] initWithFrame:CGRectMake(40, 100, 30, 30)];
