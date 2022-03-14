@@ -70,7 +70,7 @@
 - (NSString *)zs_moneyFormatWithFractionLength:(NSInteger)length
 {
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    formatter.numberStyle = kCFNumberFormatterDecimalStyle;
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
     formatter.maximumFractionDigits = length;
     formatter.minimumFractionDigits = length;
     
@@ -146,7 +146,7 @@
 }
 
 
-/// excel 获取列名。columnNumber = 1 返回 A，26 返回 Z，27 返回 AA，52 返回 AZ，53 返回 BA
+/// 26 进制转换。columnNumber = 1 返回 A，26 返回 Z，27 返回 AA，52 返回 AZ，53 返回 BA
 + (NSString *)zs_getColumnName:(NSInteger)columnNumber
 {
     NSInteger colNum = columnNumber;
@@ -169,6 +169,18 @@
 
 
 
+#pragma mark - 本地化
+- (NSString *)zs_locallized {
+    return NSLocalizedString(self, "");
+}
+
+- (NSString *)zs_localizedInTable:(NSString *)table {
+    return NSLocalizedStringFromTable(self, table, "");
+}
+
+- (NSString *)zs_localizedInTable:(NSString *)table bundle:(NSBundle *)bundle {
+    return NSLocalizedStringFromTableInBundle(self, table, bundle, "");
+}
 
 
 @end

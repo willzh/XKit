@@ -43,8 +43,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// 随机指定长度的字符串
 + (NSString *)zs_randomStringWithLength:(NSInteger)length;
 
-/// excel 获取列名，满 Z 进 A。columnNumber = 1 返回 A，26 返回 Z，27 返回 AA，52 返回 AZ，53 返回 BA
-+ (NSString *)zs_getColumnName:(NSInteger)columnNumber;
+
+
+/// 本地化，从 mainBundle 默认的 Localizable.strings 文件中读取
+- (NSString *)zs_locallized;
+
+/// 本地化，从 mainBundle 中，根据 table.strings 文件中读取
+- (NSString *)zs_localizedInTable:(NSString *)table;
+
+/// 本地化，从 bundle 中，根据 table.strings 文件中读取
+- (NSString *)zs_localizedInTable:(NSString *)table bundle:(NSBundle *)bundle;
+
 
 
 @end

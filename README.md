@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/XKit.svg?style=flat)](https://cocoapods.org/pods/XKit)
 [![Platform](https://img.shields.io/cocoapods/p/XKit.svg?style=flat)](https://cocoapods.org/pods/XKit)
 
+## Summary
+
+XKit is Objective-C category, methods... etc.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
