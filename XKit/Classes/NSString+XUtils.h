@@ -56,6 +56,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+/// 字体图标。e652.zs_unicode == \U0000e652
+- (NSString *)zs_unicode;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

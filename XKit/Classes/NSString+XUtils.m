@@ -183,4 +183,14 @@
 }
 
 
+
+
+#pragma mark - 字体图标 Unicode
+/// e652.zs_unicode == \U0000e652
+- (NSString *)zs_unicode {
+    return [NSString stringWithFormat:@"\U0000%@", self];
+}
+
+
+
 @end
